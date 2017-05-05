@@ -3,17 +3,14 @@
 
 from typing import Any
 
-from PyQt5.QtCore import pyqtProperty, pyqtSlot, pyqtSignal
+from PyQt5.QtCore import pyqtProperty
 
 from UM.Decorators import override
 
 from UM.MimeTypeDatabase import MimeType, MimeTypeDatabase
-from UM.Settings.ContainerStack import ContainerStack, InvalidContainerStackError
-from UM.Settings.InstanceContainer import InstanceContainer
+from UM.Settings.ContainerStack import ContainerStack
 from UM.Settings.SettingInstance import InstanceState
-from UM.Settings.DefinitionContainer import DefinitionContainer
 from UM.Settings.ContainerRegistry import ContainerRegistry
-from UM.Settings.Interfaces import ContainerInterface
 
 from . import Exceptions
 from .CuraContainerStack import CuraContainerStack
